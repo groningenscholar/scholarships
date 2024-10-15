@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Scholarships details</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+    <script>
+        if(!localStorage.getItem('user')){
+            location.href = './'
+        }
+    </script>
+    <div class="box">
+        <div class="percent">
+          <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+            <circle cx="70" cy="70" r="70"></circle>
+          </svg>
+          <div class="num">
+            <h2>25<span>%</span></h2>
+          </div>
+        </div>
+        <div style="text-align: left;">
+        <h3 class="text">Awaiting document review </h3>
+        <p class="name student"></p>
+        <p class="passport student"></p>
+        <p class="country student">Afghanistan</p>
+        <p class="number student"></p>
+        <p class="student">Hanze University of Applied science</p>
+        <p class="field student"></p>
+        </div>
+      </div>
+<script>
+    let name = document.querySelector('.name')
+    let passport = document.querySelector('.passport')
+let field = document.querySelector('.field')
+let number = document.querySelector('.number')
+
+    const user = localStorage.getItem('user')
+    if(user == 'hussain'){
+        name.textContent = 'Behzad Hussain'
+        passport.textContent = 'P03963511'
+        field.textContent = 'Dutch Language One year Program'
+        number.textContent = 'INS4003241'
+    }else if(user == 'sultan'){
+        name.textContent = 'Ali Rafat Sultan'
+        passport.textContent = 'P00269040'
+        field.textContent = 'Dutch Language One year Program'
+        number.textContent = 'INSM4003822'
+    }
+console.log('ehh')
+
+</script>
+    </body>
+
+</html>
