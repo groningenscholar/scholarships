@@ -61,8 +61,8 @@ body
 }
 .box .percent svg circle:nth-child(2)
 {
-  stroke-dashoffset:calc(440 - (440 * 25) / 100);
-  stroke:#f4e403;
+  stroke-dashoffset:calc(440 - (440 * 40) / 100);
+  stroke:#03bb09;
 }
 .box .percent .num
 {
@@ -87,7 +87,7 @@ body
 .box .text
 {
   padding:10px 0 0;
-  color:#d59500;
+  color:#00a61c;
   font-weight:700;
   letter-spacing:1px;
 }
